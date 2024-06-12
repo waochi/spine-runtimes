@@ -52,6 +52,7 @@ SpineAnimationState::SpineAnimationState() : animation_state(nullptr), sprite(nu
 }
 
 SpineAnimationState::~SpineAnimationState() {
+	SPINE_CHECK(animation_state, )
 	delete animation_state;
 }
 
